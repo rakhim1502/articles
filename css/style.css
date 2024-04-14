@@ -17,8 +17,7 @@ body {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-
+  font-family: "Roboto-Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   height: 100%;
@@ -30,7 +29,10 @@ img {
   height: auto;
   max-width: 100%;
 }
-
+* :focus{
+  outline: 2px dashed #1E90FF;
+  outline-offset: 2px;
+}
 .container {
   width: 100%;
   max-width: 1200px;
@@ -39,4 +41,200 @@ img {
   margin-left: auto;
   margin-right: auto;
 
+}
+.main-content{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.global-wrapper{
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 24px;
+  align-items: center;
+  width: 600px;
+  height: 782px;
+  background-image: url(../img/Rectangle\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: inherit;
+}
+.hero-content {
+  max-width: 285px;
+}
+.hero-heading {
+  font-family: "Bebas Neue", "Roboto-Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #fff;
+
+}
+.hero-link {
+  font-family: "Bebas Neue", "Roboto-Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #1E90FF;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hero-link:hover{
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.hero-link:active{
+  background-color: rgba(30, 144, 255, 0.6);
+}
+.hero-link-inner {
+  display: flex;
+  padding: 12px 24px;
+}
+.hero-link-inner::before{
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  background-image: url(../img/Vector.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: "";
+}
+.hero-link-text {
+}
+.latest-videos {
+  background-color: #fff;
+  width: 100%;
+  max-width: 600px;
+  padding: 54px;
+}
+.latest-videos-heading {
+  margin-top: 0;
+  font-family: "Bebas Neue", "Roboto-Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.latest-videos-divider {
+  height: 1px;
+  margin-bottom: 24px;
+  border: 0;
+  background-color: #999;
+}
+.latest-videos-list {
+  padding: 0;
+  margin-bottom: 24px;
+  list-style: none;
+}
+.latest-videos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.item-latest-videos {
+  display: flex;
+}
+.item-latest-videos-img{
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.item-latest-videos-info {
+  padding: 16px;
+}
+.item-latest-videos-heading {
+  margin-top: 0;
+  font-family: "Bebas Neue", "Roboto-Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+  line-height: normal;
+}
+.item-latest-videos-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+}
+.item-latest-videos-link:hover{
+  color: #1E90FF;
+}
+.item-latest-videos-link:active{
+  opacity: 0.6;
+}
+.item-latest-videos-meta {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: normal;
+}
+.item-latest-videos-published-at {
+  display: flex;
+  align-items: center;
+}
+.item-latest-videos-published-at::before{
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon-clock1.svg);
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+}
+.item-latest-videos-published-at:not(:last-child){
+  margin-right: 24px;
+}
+
+.item-latest-videos-views {
+  display: flex;
+  align-items: center;
+}
+.item-latest-videos-views::before{
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon-views.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: "";
+  margin-right: 4px;
+}
+.load-more-button{
+  display: block;
+  border:0;
+  width: 100%;
+  padding: 12px;
+  background-color: #1E90FF;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 4px;
+}
+.load-more-button:hover{
+  background-color: rgba(30, 144, 255, 0.8);
+}
+.load-more-button:active{
+  rgba(30, 144, 255, 0.6)
 }

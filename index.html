@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-  <link rel="stylesheet" href="css/normalize.css">i
+  <title>Article</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <main class="content">
+    <div class="global-wrapper">
+      <!-- HERO -->
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-heading" >Sayohat haqidagi eng qiziq bloglarni kuzatib boring.</h1>
+          <a class="hero-link" href="#">
+            <span class="hero-link-inner">
+              <span class="hero-link-text">top bloglar</span>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <section class="latest-videos">
+        <h2 class="latest-videos-heading">Eng so’nggi videolar</h2>
+        <hr class="latest-videos-divider">
+        <ul class="latest-videos-list">
+          <li class="latest-videos-item">
+            <div class="item-latest-videos">
+              <img class="item-latest-videos-img" src="img/article-poster.jpg" alt="uycha" width="160" height="90">
+              <div class="item-latest-videos-info">
+                <h3 class="item-latest-videos-heading">
+                  <a class="item-latest-videos-link" href="">O’rmonda uchburchaksimon uy qurdik</a>
+                  <div class="item-latest-videos-meta">
+                    <time class="item-latest-videos-published-at" datetime="2024-04-06">1 hafta oldin</time>
+                    <div class="item-latest-videos-views">873ming</div>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="latest-videos-item">
+            <div class="item-latest-videos">
+              <img class="item-latest-videos-img" src="img/article-poster-1.jpg" alt="uycha2" width="160" height="90">
+              <div class="item-latest-videos-info">
+                <h3 class="item-latest-videos-heading">
+                  <a class="item-latest-videos-link" href="">Sibirliklarning qoldirib ketilgan uychalari</a>
+                  <div class="item-latest-videos-meta">
+                    <time class="item-latest-videos-published-at" datetime="2024-03-24">3 hafta oldin</time>
+                    <div class="item-latest-videos-views">819ming</div>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </li>
+          <li class="latest-videos-item">
+            <div class="item-latest-videos">
+              <img class="item-latest-videos-img" src="img/article-poster-2.jpg" alt="kuchukcha" width="160" height="90">
+              <div class="item-latest-videos-info">
+                <h3 class="item-latest-videos-heading">
+                  <a class="item-latest-videos-link" href="">Yer-uyida mallarang kuchugim bilan tunab qoldik</a>
+                  <div class="item-latest-videos-meta">
+                    <time class="item-latest-videos-published-at" datetime="2024-03-13">1 hafta oldin</time>
+                    <div class="item-latest-videos-views">3.9mln</div>
+                  </div>
+                </h3>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="load-more-button" type="button">Yana yuklash</button>
+      </section>
+    </div>
+  </main>
 
   <script src="js/main.js"></script>
 
